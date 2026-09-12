@@ -1,0 +1,45 @@
+# The study is meant to be read by whoever is sent the link, not found through
+# a search engine, so crawlers are turned away by default.
+#
+# The link-preview fetchers are a different matter: without them, sharing the
+# URL in a chat gives a bare link with no title and no picture. They are named
+# explicitly here because a group matching "*" would otherwise apply to them.
+
+User-agent: facebookexternalhit
+Allow: /
+
+User-agent: facebookcatalog
+Allow: /
+
+User-agent: WhatsApp
+Allow: /
+
+User-agent: Twitterbot
+Allow: /
+
+User-agent: Slackbot
+Allow: /
+
+User-agent: Slackbot-LinkExpanding
+Allow: /
+
+User-agent: TelegramBot
+Allow: /
+
+User-agent: LinkedInBot
+Allow: /
+
+User-agent: Discordbot
+Allow: /
+
+User-agent: SkypeUriPreview
+Allow: /
+
+User-agent: redditbot
+Allow: /
+
+User-agent: Iframely
+Allow: /
+
+User-agent: *
+Disallow: /
